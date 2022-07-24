@@ -1,0 +1,202 @@
+.WatchList-main-container{
+    height: 100%;
+    width: 400px;
+    display: block;
+    font-size: .8125rem;
+}
+.WatchList-search-container{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.WatchList-search-container input{
+    color: #444;
+    width: 100%;
+    padding: 15px 10px 15px 40px;
+    outline: none;
+    border: none;
+    line-height: normal;
+   
+}
+.WatchList-search-container input::placeholder{
+    color: #444;
+   opacity: .5;
+}
+.watch_search_icon{
+    position: absolute;
+    border: 0;
+    padding: 0;
+    top: 13px;
+    left: 14px;
+    opacity: .5;
+}
+.watchlist-count{
+    position: absolute;
+    top: 0;
+    right: 15px;
+    color:#ccc;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+}
+.WatchList-added-items{
+    width: 100%;
+    position: relative;
+    overflow: auto;
+}
+.WatchList-added-item{
+    width: 100%;
+    display: flex;
+    padding: 13px 15px;
+    cursor: move;
+    border-bottom: 1px solid #f1f1f1;
+}
+.WatchList-added-item:hover{
+    background: #f9f9f9;
+}
+.WL-item-symbol{
+    font-size: .8125rem;
+    flex: 1;
+    text-align: left;
+    display: flex;
+}
+.WL-item-symbol-type{
+    font-size: .4375rem;
+    vertical-align: middle;
+    margin-left: 6px;
+    line-height: 18px;
+    display: inline-block;
+    opacity: .7;
+    margin-top: 2px;
+}
+.WL-item-price{
+    flex: 1;
+    text-align: right;
+}
+.WL-item-price span{
+    margin: 0 5px;
+}
+.WL-item-price-percMove{
+    opacity: .6;
+}
+
+.price-down, .arrow-down{
+    color: #df514c;
+}
+.price-up, .arrow-up{
+    color: #4caf50;
+}
+.WatchList-list-container{
+    position: fixed;
+    bottom: 0;
+    width: 400px;
+    display: flex;
+    border-top: 1px solid #eee;
+    align-items: center;
+}
+.WatchList-list-items{
+    float: left;
+    width: 100%;
+}
+.WatchList-list-item{
+    padding: 10px 15px;
+    border-right: 1px solid #eee;
+    cursor: pointer;
+    color: #9b9b9b;
+}
+
+.WatchList-list-item:hover{
+    background-color: #f9f9f9;
+    color: #ff5722;
+}
+.WatchList-list-settings{
+    float: right;
+    padding: 10px 15px;
+}
+[data-balloon] {
+    position: relative;
+    opacity: 1!important;
+}
+
+[data-balloon][data-balloon-pos=up]:hover:after, [data-balloon][data-balloon-pos=up]:hover:before{
+    -webkit-transform: translate(-50%);
+    transform: translate(-50%);
+}
+[data-balloon][data-balloon-pos=up]:before {
+    margin-bottom: 5px;
+}
+[data-balloon][data-balloon-pos=up]:after, [data-balloon][data-balloon-pos=up]:before {
+    bottom: 100%;
+    left: 50%;
+    -webkit-transform: translate(-50%,10px);
+    transform: translate(-50%,10px);
+    -webkit-transform-origin: top;
+    transform-origin: top;
+}
+
+[data-balloon]:hover:after, [data-balloon]:hover:before{
+    filter: alpha(opactiy=100);
+    opacity: 1;
+    pointer-events: none;
+}
+[data-balloon]:after, [data-balloon]:before, [data-balloon]:hover:before {
+    font-family: Open Sans,sans-serif;
+    font-weight: 600;
+}
+[data-balloon]:before {
+    background: no-repeat url(../images/icons/download.svg);
+    background-size: 100% auto;
+    width: 18px;
+    height: 6px;
+    content: "";
+}
+[data-balloon]:after {
+    background: rgba(17,17,17,.9);
+    border-radius: 4px;
+    color: #fff;
+    content: attr(data-balloon);
+    font-size: 12px;
+    padding: 0.5em 1em;
+    white-space: nowrap;
+    line-height: 1.6;
+}
+[data-balloon]:after, [data-balloon]:before {
+    filter: alpha(opactiy=0);
+    opacity: 0;
+    pointer-events: none;
+    -webkit-transition: all .18s ease-out .18s;
+    transition: all .18s ease-out .18s;
+    -webkit-transition-delay: 0ms;
+    transition-delay: 0ms;
+    position: absolute;
+    z-index: 10;
+}
+[data-balloon][data-balloon-pos=up]:after {
+    margin-bottom: 10px;
+}
+[data-balloon][data-balloon-pos=left]:before {
+    background: no-repeat url(../images/icons/left_arrow.svg);
+    background-size: 100% auto;
+    width: 6px;
+    height: 18px;
+    margin-right: 5px;
+    right: 100%;
+    top: 50%;
+    -webkit-transform: translate(10px,-50%);
+    transform: translate(10px,-50%);
+    
+}
+[data-balloon][data-balloon-pos=left]:after {
+    margin-right: 11px;
+    right: 100%;
+    top: 50%;
+    -webkit-transform: translate(10.5px,-50%);
+    transform: translate(10.5px,-50%);
+}

@@ -1,0 +1,56 @@
+.NRML {
+  font-size: 12px !important;
+  padding: 5px 10px;
+  background: rgba(132, 74, 235, 0.1);
+  color: #844aeb;
+}
+
+.MIS {
+  font-size: 12px !important;
+  padding: 5px 10px;
+  color: #ff8f00;
+  background: rgba(255, 143, 0, 0.1);
+}
+
+.CNC {
+  font-size: 12px !important;
+  padding: 5px 10px;
+  color: #d9863d;
+  background: rgba(217, 134, 61, 0.1);
+}
+
+.trade-day-div {
+  padding: 10px 16px;
+
+  position: relative;
+}
+.trade-day,
+.trade-type {
+  font-size: 12px;
+  position: absolute;
+  top: 3px;
+  left: 0px;
+}
+.trade-type {
+  width: 11px;
+  height: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 8px;
+  border-radius: 50%;
+  background: rgb(71, 114, 243);
+  opacity: 0.7;
+  left: 15px;
+}
+.nfo {
+  font-size: 10px !important;
+  opacity: 0.7;
+}
+.trade-close{
+  opacity: 0.5 !important;
+}
+.trade-open{
+  opacity: 1;
+}

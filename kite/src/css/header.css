@@ -1,0 +1,129 @@
+.header-main-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 60px;
+    box-shadow: 0 1px 5px 0 rgba(0,0,0,.1);
+    box-sizing: border-box;
+    border: 1px solid #eee;
+}
+.header-wrapper{
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    max-width: 1366px;
+    display: flex;
+}
+.header-left-panel{
+   width: 400px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-flex: 0;
+    border-right: 1px solid #eee;
+}
+.header-left-panel-item{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    font-size: .75rem;
+   
+}
+.header-pl-scriptSymbol{
+    font-weight: 600;
+    margin-right: 5px;
+    line-height: 1.6;
+}
+.header-pl-scriptPrice{
+color: #4caf50;
+margin-right: 5px;
+}
+.header-pl-scriptPercMove{
+    margin-right: 5px;
+}
+.header-pl-scriptPercMove{
+    opacity: .7;
+}
+.header-right-panel{
+    display: flex;
+    align-items: center;
+    -webkit-box-flex: 1;
+    flex:1 1;
+}
+
+.header-right-logo img{
+    width: auto;
+    height: 20px;
+}
+
+.header-right-logo{
+    flex: 1;
+    margin: 0 20px 0 50px;
+}
+.header-right-menus{
+    border-right: 1px solid #eee;
+}
+
+.header-right-menus a{
+   
+    cursor: pointer;
+    padding: 0 15px;
+    font-size: .75rem;
+    line-height: 30px;
+    display: inline-block;
+  
+    color: #444;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.header-right-menus a:hover{
+    color: #ff5722; 
+} 
+.header-right-user{
+    /* flex: 1; */
+    -ms-flex-preferred-size: auto;
+    flex-basis: auto;
+    min-width: 90px;
+    text-align: right;
+    padding: 15px 10px;
+    display: flex;
+    align-items: center;
+
+}
+
+.header-r-user-img{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.header-r-user-userName{
+    padding: 0 15px;
+    font-size: .75rem;
+    line-height: 30px;
+    display: inline-block;
+    text-decoration: none;
+    color: var(--color-text-default);
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}

@@ -1,0 +1,156 @@
+
+.login-main-container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+.login-inputs-container{
+    margin: 60px auto 40px auto;
+    width: 360px;
+    padding: 40px;
+    padding-bottom: 55px;
+    border: 2px solid #eee;
+    box-shadow: 1px 1px 4px var(--color-border-default);
+    border-radius: 5px;
+    animation: swing-in .15s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.login-user-profile{
+    text-align: center;
+    margin-bottom: 15px;
+}
+.login-user-profile img{
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-bottom: 15px;
+   
+}
+.login-user-username{
+    margin-top: 3px;
+    font-weight: 400;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+.login-changeUser{
+    margin-top: 5px;
+    font-size: .625rem;
+    color: #4184f3;
+    text-decoration: none;
+    border-bottom: none;
+}
+.login-password-container {
+    width: 100%;
+    position: relative;
+}
+.login-password-label{
+    display: block;
+    display: none;
+    z-index: 5;
+    position: absolute;
+    top: -8px;
+    background-color: var(--color-bg-default);
+    padding: 0 5px;
+    margin-left: 10px;
+    font-size: .625rem;
+    animation-name: slideInUp;
+    animation-duration: .17s;
+    animation-fill-mode: both;
+    background: #fff;
+}
+.login-password-container input{
+    order: 1px solid var(--color-border-default);
+    border-radius: 3px;
+    padding: 13px 15px;
+    color: var(--color-text-default);
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 1px solid #eee;
+}
+.login-password-container input:focus{
+    outline: none;
+    border-color: #9b9b9b;
+}
+.login-Button-container{
+    text-align: center;
+    margin-top: 30px;
+    width: 100%;
+    color: #fff;
+    background-color: #ff5722;
+    padding: 10px 20px;
+    border-radius: 3px;
+    border: 1px solid #ff5722;
+    font-weight: 400;
+    font-size: .925rem;
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+}
+.login-Button-container:hover{
+    opacity: .8;
+}
+.login-forget-password{
+    cursor: pointer;
+    margin-top: 18px;
+    font-size: .75rem;
+    color: #9b9b9b;
+}
+.login-forget-password:hover{
+color: #444;
+}
+.login-footer-container{
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.login-app-icons img{
+    cursor: pointer;
+    margin: 0 12px;
+    height: auto;
+    width: 12px;
+}
+.login-fotter-logo{
+    margin: 10px 0;
+}
+.login-footer-openAccount-container{
+    margin: 10px 0;
+    color: #9b9b9b;
+    cursor: pointer;
+    font-size: .75rem;
+}
+.login-footer-openAccount-container:hover{
+    color: #444;
+}
+.login-footer-terms{
+    text-align: center;
+    font-size: .625rem;
+    color: #9b9b9b;
+    opacity: .7;
+    line-height: 1.6;
+    font-weight: 400;
+    letter-spacing: 0;
+    font-family: Open Sans,sans-serif;
+}
+.login-footer-version{
+    margin: 10px 0;
+    text-align: center;
+    font-size: .625rem;
+    color: #9b9b9b;
+    opacity: .7;
+    line-height: 1.6;
+    font-weight: 400;
+    letter-spacing: 0;
+    font-family: Open Sans,sans-serif;
+}
+
